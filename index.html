@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>A Place Fur Pets</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(135deg, #ffe6f2, #e6f7ff, #f3e6ff);
+    overflow-x: hidden;
+    color: #555;
+}
+
+/* Floating paw prints */
+.paw {
+    position: fixed;
+    font-size: 24px;
+    opacity: 0.2;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% {transform: translateY(100vh) rotate(0deg);}
+    100% {transform: translateY(-10vh) rotate(360deg);}
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff6fae;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff8fc7;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #ff6fae;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6fae;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin: 15px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    color: #8c7bff;
+    font-weight: bold;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating paws -->
+<div class="paw" style="left:10%;">🐾</div>
+<div class="paw" style="left:30%; animation-delay:2s;">🐾</div>
+<div class="paw" style="left:50%; animation-delay:4s;">🐾</div>
+<div class="paw" style="left:70%; animation-delay:1s;">🐾</div>
+<div class="paw" style="left:90%; animation-delay:3s;">🐾</div>
+
+<header>
+    <h1>🐾 A Place Fur Pets 🐾</h1>
+    <p>Loving care for your furry, feathered, and scaly friends 💕</p>
+    <a class="btn" href="#book">Book Now</a>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        I provide safe, gentle, and loving pet sitting for small and medium animals.
+        Dogs, cats, rabbits, birds, guinea pigs, reptiles — all welcome (no aggressive pets).
+        Your pets will be cared for like my own with updates and attention.
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="price">$15</div>
+            <p>Per Hour</p>
+        </div>
+        <div class="card">
+            <div class="price">$45</div>
+            <p>4 Hour Visit</p>
+        </div>
+        <div class="card">
+            <div class="price">Custom</div>
+            <p>Extended Visits Available</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <div class="grid gallery">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" />
+        <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8" />
+        <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2" />
+    </div>
+</section>
+
+<section>
+    <h2>Reviews</h2>
+    <div class="review">⭐⭐⭐⭐⭐ “Amazing care for my cat!”</div>
+    <div class="review">⭐⭐⭐⭐⭐ “Very reliable and kind!”</div>
+    <div class="review">⭐⭐⭐⭐⭐ “My dog loved them!”</div>
+</section>
+
+<section id="book">
+    <h2>Book a Visit</h2>
+    <div class="card">
+        <p>Click below to request a booking:</p>
+        <a class="btn" href="https://forms.google.com" target="_blank">
+            Open Booking Form
+        </a>
+        <p style="margin-top:10px;font-size:0.9rem;">
+            (Replace this link with your Google Form later)
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>📧 yourbusiness@email.com</p>
+        <p>📱 Your phone number</p>
+        <p>💬 Instagram / Discord (optional)</p>
+    </div>
+</section>
+
+<footer>
+    💕 A Place Fur Pets — Loving care when you can't be there 🐾
+</footer>
+
+</body>
+</html>
